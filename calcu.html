@@ -1,0 +1,76 @@
+<html>
+    <head>
+        
+        <title>calcu</title>
+        <script>
+            
+            function calc()<!--function of operators in listbox-->
+            {
+                var n1 = parseFloat(document.getElementById('n1').value);
+                var n2 = parseFloat(document.getElementById('n2').value);
+                
+                var oper = document.getElementById('operators').value;
+                
+                if(oper === '+')
+                {
+                    document.getElementById('result').value = n1+n2;
+                }
+                
+                if(oper === '-')
+                {
+                    document.getElementById('result').value = n1-n2;
+                }
+                
+                if(oper === '/')
+                {
+                    document.getElementById('result').value = n1/n2;
+                }
+                
+                if(oper === 'X')
+                {
+                    document.getElementById('result').value = n1*n2; 
+                }
+				 
+            }
+			
+         function tryalert(){
+		alert("simon john dimla bt701");
+		}
+		
+		
+		function trydocuwrite(){
+		document.write("i live in the house");
+		}
+		
+		
+		function demo(){
+		document.getElementById("try").innerHTML ="two";
+		}
+		
+		console.log("das my name n section");
+        </script>
+	
+        
+    </head>
+    <body>
+        
+        first number <input type="text" id="n1"></input><br/><br/><!--where you input 2 numbers-->
+        second number <input type="text" id="n2"></input><br/><br/>
+        
+        operator <select id="operators"> <!--this is the list down without the function-->
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="/">/</option>
+            <option value="X">*</option>
+        </select><br><br>
+        
+        compute <button onclick="calc();">=</button>
+        <input type="text" id="result"/><br>
+		<button onclick="tryalert();">clickme</button>
+		<button onclick="trydocuwrite();">clickme for the last time</button>
+		
+		
+		<p id="try" onClick="demo()">one plus one is equals to? </p>
+        
+    </body>
+</html>

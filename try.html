@@ -1,0 +1,52 @@
+<head>
+
+<body>
+<p id="name"></p>
+
+<script>
+var num=0;
+while(num < 5){
+ window.alert("keep going");
+ num++
+}
+window.alert("you stop here");
+
+ info=["simon ","john ","dimla"];
+document.getElementById("name").innerHTML=("my name is "+info);
+
+</script>
+<p id="dd">qweqwe</p>
+<script>
+
+var plus=showProd(12,12);
+function showProd(n1,n2) {
+  return n1 + n2;
+}
+document.getElementById("dd").innerHTML = plus;
+</script>
+
+
+
+<button onClick="original()">original</button>  <!--buttons for organized option for array-->
+<button onClick="alpha()" >alphabetical</button>
+<button onClick="reverse()" >reverse</button>
+
+<script>
+
+var arrayko=["C book","B book","A book","E book"]; <!-- my array for booklist -->
+function original(){
+console.log(arrayko); <!--what wil happen if you click original button is it will display the original list of order-->
+}
+
+function alpha(){   <!--if this is clicked the array will be displayed in aphabetical-->
+arrayko.sort();
+console.log(arrayko);
+}
+function reverse(){
+arrayko.reverse(); <!--and this in reversed-->
+console.log(arrayko);
+}
+</script>
+
+</body>
+</head>
