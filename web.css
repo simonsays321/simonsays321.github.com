@@ -152,7 +152,7 @@ section .title::after{
 	color:#0000FF ;
 }
 .home .home-content .text-3 span{
-    color: #FFFF00;
+    color: #F6BE00;
     font-weight: 500;
 }
 .home .home-content a{
@@ -167,14 +167,10 @@ section .title::after{
     border: 2px solid crimson;
     transition: all 0.3s ease;
 }
-.home .home-content a:hover{
-    color: crimson;
-    background: none;
-}
 
 .about .title::after{
     content: "and what i like";
-	color:#FFFF00;
+	color:#F6BE00;
 }
 .about .about-content .left{
     width: 45%;
